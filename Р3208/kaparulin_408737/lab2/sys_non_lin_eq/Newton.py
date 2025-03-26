@@ -114,4 +114,4 @@ class Newton:
             exit()
 
 if __name__ == "__main__":
-    Newton(sys[0])
+    Newton(sys[1])
