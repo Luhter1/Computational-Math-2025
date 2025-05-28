@@ -7,6 +7,9 @@ class SimpsonRule:
         """Интегрирование методом парабол с заданной точностью.
             e - относительная точность,
             n - число отрезков начального разбиения"""
+        """
+        SS = (4*T(2n) - T(N))/3
+        """
         old_trapez_sum, _ = TrapezoidRule.trapezoid_rule(func, a, b, n, e=float('inf'))
         new_trapez_sum, _ = TrapezoidRule.trapezoid_rule(func, a, b, 2*n, e=float('inf'))
         ans = (4 * new_trapez_sum - old_trapez_sum) / 3
