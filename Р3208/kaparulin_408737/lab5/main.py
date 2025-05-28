@@ -1,6 +1,5 @@
 import numpy as np
 import matplotlib.pyplot as plt
-from scipy.interpolate import lagrange, CubicSpline
 from scipy.special import factorial
 from math import sin, cos, exp, log
 
